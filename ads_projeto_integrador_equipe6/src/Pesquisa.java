@@ -10,6 +10,11 @@ public class Pesquisa {
 
     private LocalDate date2;
 
+    private LocalDate date3;
+
+    private  Voto voto;
+
+
     public LocalDate getDate2() {
         return date2;
     }
@@ -26,7 +31,7 @@ public class Pesquisa {
         this.date3 = date3;
     }
 
-    private LocalDate date3;
+
 
     public Pesquisa(int registro, String instituto, String uf) {
         this.registro = registro;
@@ -36,6 +41,7 @@ public class Pesquisa {
         this.date2 = Data2();
         this.date3 = Data3();
     }
+
 
     private LocalDate Data (){
         return LocalDate.of(2022,01,01);
